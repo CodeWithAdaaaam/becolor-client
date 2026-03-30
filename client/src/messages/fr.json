@@ -1,0 +1,565 @@
+{
+  "Metadata": {
+    "title": "be COLOR | Panel d'administration",
+    "description": "Système de gestion complet pour salon de coiffure et beauté."
+  },
+  "LanguageSwitcher": {
+    "changeToFrench": "Français",
+    "changeToArabic": "Arabe"
+  },
+  "Days": {
+    "0": "Dimanche",
+    "1": "Lundi",
+    "2": "Mardi",
+    "3": "Mercredi",
+    "4": "Jeudi",
+    "5": "Vendredi",
+    "6": "Samedi"
+  },
+  "Sidebar": {
+    "title": "be COLOR",
+    "subtitle": "Admin Panel",
+    "dashboard": "Tableau de bord",
+    "agenda": "Agenda",
+    "appointments": "Réservations",
+    "clients": "Clients",
+    "caisse": "Caisse & Finance",
+    "stats": "Statistiques",
+    "services": "Services",
+    "team": "Équipe & Staff",
+    "suppliers": "Fournisseurs",
+    "history": "Historique Caisse",
+    "settings": "Paramètres",
+    "logout": "Déconnexion"
+  },
+  "Dashboard": {
+    "title": "Tableau de Bord",
+    "subtitle": "Aperçu de l'activité en temps réel",
+    "today": "Aujourd'hui",
+    "kpi": {
+      "dailyRevenue": "CA du Jour",
+      "monthlyRevenue": "CA Mensuel",
+      "dailyCount": "Rendez-vous (Auj.)"
+    },
+    "charts": {
+      "evolution": "Évolution (7 derniers jours)",
+      "ca": "CA",
+      "topServices": "Top Prestations (Mois)",
+      "sales": "ventes",
+      "noData": "Pas assez de données."
+    },
+    "upcoming": {
+      "title": "Prochains RDV",
+      "viewAgenda": "Voir l'agenda",
+      "empty": "Aucun autre RDV prévu aujourd'hui.",
+      "table": {
+        "time": "Heure",
+        "client": "Cliente",
+        "service": "Prestation",
+        "staff": "Coiffeur"
+      }
+    }
+  },
+  "AgendaPage": {
+    "title": "Agenda",
+    "filterByJob": "-- Métier --",
+    "jobCoiffure": "Coiffure",
+    "jobOnglerie": "Onglerie",
+    "jobEsthetique": "Esthétique",
+    "filterByStaff": "-- Employé(e) --",
+    "newAppointment": "Nouveau rendez-vous",
+    "newAppointmentShort": "Ajouter",
+    "calendar": {
+      "allDay": "Toute la journée",
+      "previous": "Précédent",
+      "next": "Suivant",
+      "today": "Aujourd'hui",
+      "month": "Mois",
+      "week": "Semaine",
+      "day": "Jour",
+      "agenda": "Agenda",
+      "noEventsInRange": "Aucun rendez-vous dans cette période.",
+      "showMore": "autres"
+    }
+  },
+  "Modals": {
+    "create": {
+      "title": "Nouveau rendez-vous",
+      "clientExisting": "Cliente existante",
+      "totalDuration": "Durée totale : {time} min",
+      "totalPrice": "Prix total : {price} Dhs",
+      "clientNew": "Nouvelle cliente",
+      "clientWalkin": "Passante",
+      "searchClient": "Rechercher une cliente",
+      "clientList": "Liste des clientes",
+      "firstname": "Prénom",
+      "lastname": "Nom",
+      "phone": "Téléphone",
+      "walkinLabel": "Nom du passage",
+      "walkinPlaceholder": "Ex: Dame en rouge...",
+      "walkinNote": "Ce client ne sera pas enregistré en base.",
+      "service": "Prestation",
+      "serviceLabel": "Prestation",
+      "selectServices": "Choisir une ou plusieurs prestations",
+      "choose": "Choisir",
+      "staff": "Coiffeur / Staff",
+      "who": "Qui ?",
+      "time": "Heure",
+      "date": "Date",
+      "dateLabel": "Date & Heure",
+      "whatsappNote": "Notification WhatsApp automatique.",
+      "validate": "Confirmer le rendez-vous",
+      "fillAllFieldsError": "Veuillez remplir tous les champs obligatoires.",
+      "fillClientFormError": "Veuillez remplir les infos de la nouvelle cliente.",
+      "walkinNameError": "Veuillez donner un nom au client de passage.",
+      "walkinDefaultFirstname": "Passage",
+      "selectClientError": "Veuillez sélectionner une cliente.",
+      "successMessage": "✅ Rendez-vous créé !",
+      "errorMessage": "❌ Erreur lors de la création."
+    },
+    "details": {
+      "title": "Détails du rendez-vous",
+      "staffLabel": "Coiffeur / Staff",
+      "changeService": "Changer de service",
+      "resendConfirmation": "Renvoyer confirmation WhatsApp",
+      "statusConfirmed": "Confirmer le RDV",
+      "statusComplete": "Encaisser & Clôturer",
+      "statusCancel": "Annuler le RDV",
+      "delete": "Supprimer",
+      "notesLabel": "Notes internes :"
+    },
+    "complete": {
+      "title": "Clôture et paiement",
+      "finalAmount": "Montant final (MAD)",
+      "cancel": "Annuler",
+      "validate": "Valider le paiement",
+      "successMessage": "✅ Rendez-vous terminé et encaissé !",
+      "errorMessage": "❌ Erreur lors de la validation."
+    },
+    "changeService": {
+      "title": "Modifier la prestation",
+      "client": "Cliente",
+      "date": "Date",
+      "newService": "Nouvelle prestation",
+      "cancel": "Annuler",
+      "save": "Enregistrer",
+      "saving": "Mise à jour...",
+      "successMessage": "✅ Prestation modifiée !",
+      "errorMessage": "❌ Erreur de modification."
+    },
+    "vipLabel": "Compte VIP / Illimité",
+    "vipDesc": "Ce client ne paie pas (Gratuité totale).",
+    "vipBadge": "VIP",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "save": "Enregistrer"
+  },
+  "AppointmentsPage": {
+    "title": "Historique des Réservations",
+    "subtitle": "Retrouvez tous les rendez-vous passés et à venir.",
+    "searchPlaceholder": "Chercher client, tel...",
+    "filterStatus": {
+      "all": "Tous les statuts",
+      "CONFIRME": "Confirmé",
+      "TERMINE": "Terminé",
+      "ANNULE": "Annulé",
+      "EN_COURS": "En cours"
+    },
+    "table": {
+      "date": "Date & Heure",
+      "client": "Client",
+      "service": "Prestation",
+      "staff": "Employé",
+      "price": "Prix",
+      "status": "Statut",
+      "unassigned": "Non assigné",
+      "empty": "Aucun rendez-vous trouvé."
+    },
+    "pagination": "Page {current} sur {total}"
+  },
+  "CaisseSystem": {
+    "title": "Caisse Salon",
+    "subtitle": "Gestion des encaissements",
+    "balance": "En Caisse",
+    "fund": "Fond de Caisse",
+    "tabs": {
+      "sale": "Encaissement",
+      "expense": "Dépense / Sortie"
+    },
+    "sale": {
+      "searchPlaceholder": "Chercher une prestation...",
+      "emptyServices": "Aucune prestation trouvée.",
+      "ticket": "Ticket",
+      "client": "Cliente",
+      "clientPlaceholder": "Choisir existant",
+      "clientWalkin": "Passante",
+      "clientNamePlaceholder": "Nom (Optionnel)",
+      "selectClient": "-- Sélectionner --",
+      "emptyCart": "Panier vide",
+      "total": "Total",
+      "pay": "ENCAISSER",
+      "methods": {
+        "ESPECES": "ESPÈCES",
+        "CB": "CB",
+        "VIREMENT": "VIREMENT",
+        "AUTRE": "AUTRE"
+      },
+      "alerts": {
+        "emptyCart": "Sélectionnez au moins une prestation.",
+        "noClient": "Veuillez choisir une cliente.",
+        "success": "✅ Encaissement réussi !"
+      }
+    },
+    "expense": {
+      "title": "Nouvelle Sortie",
+      "amount": "Montant (MAD)",
+      "reason": "Motif",
+      "supplier": "Fournisseur",
+      "existingSupplier": "Choisir existant",
+      "newSupplier": "+ Nouveau",
+      "divers": "-- Divers --",
+      "submit": "VALIDER SORTIE",
+      "alerts": {
+        "missing": "Remplissez montant et motif",
+        "success": "✅ Sortie enregistrée !"
+      }
+    },
+    "fundModal": {
+      "title": "Fond de Caisse",
+      "placeholder": "Montant (ex: 500)",
+      "cancel": "Annuler",
+      "validate": "Valider",
+      "success": "✅ Fond de caisse ajouté !"
+    }
+  },
+  "ClientsPage": {
+    "title": "Clients",
+    "searchPlaceholder": "Chercher (Nom, Tel...)",
+    "newClient": "Nouveau Client",
+    "newShort": "Nouveau",
+    "empty": "Aucun client trouvé.",
+    "table": {
+      "client": "Client",
+      "contact": "Contact",
+      "notes": "Notes Techniques",
+      "actions": "Actions",
+      "noNotes": "Aucune note"
+    },
+    "modal": {
+      "titleNew": "Nouveau Client",
+      "titleEdit": "Modifier Fiche",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phone": "Téléphone (WhatsApp)",
+      "email": "Email (Optionnel)",
+      "techNotes": "Notes Techniques / Coloration",
+      "techPlaceholder": "Ex: Racines 5.0 (20g) + 6% / Longueurs 6.34...",
+      "save": "Enregistrer la fiche",
+      "vipLabel": "Compte VIP / Illimité",
+      "vipDesc": "Ce client ne paie pas (Gratuité totale).",
+      "vipBadge": "VIP"
+    },
+    "alerts": {
+      "confirmDelete": "Supprimer cette cliente ?",
+      "errorDelete": "Impossible de supprimer (Probablement liée à des RDV)",
+      "errorSave": "Erreur enregistrement."
+    }
+  },
+  "ClientDetailsPage": {
+    "backToList": "Retour à la liste",
+    "exportPdf": "Exporter Fiche Complète (PDF)",
+    "historyTitle": "Historique des Prestations",
+    "age": "{count} ans",
+    "ageInf": "Moins d'un an",
+    "na": "N/A",
+    "cards": {
+      "formula": "Formule :",
+      "technique": "Technique :",
+      "noNote": "Aucune note technique pour ce RDV.",
+      "editNote": "Modifier la note du RDV",
+      "addNote": "Ajouter une note au RDV"
+    },
+    "modal": {
+      "title": "Fiche Technique du RDV",
+      "formulaLabel": "Formule / Mélange",
+      "techniqueLabel": "Technique appliquée",
+      "resultLabel": "Résultat constaté",
+      "save": "Enregistrer",
+      "success": "Note technique du RDV enregistrée !"
+    },
+    "loading": "Chargement de la fiche client..."
+  },
+  "HistoryPage": {
+    "title": "Historique Financier",
+    "subtitle": "Journal détaillé des entrées et sorties.",
+    "searchPlaceholder": "Rechercher (Client, Motif...)",
+    "filters": {
+      "all": "Tout",
+      "in": "Entrées",
+      "out": "Sorties"
+    },
+    "table": {
+      "date": "Date & Heure",
+      "description": "Description / Motif",
+      "author": "Auteur",
+      "method": "Méthode",
+      "amount": "Montant",
+      "noDescription": "Sans description",
+      "clientPrefix": "Cliente :",
+      "empty": "Aucune transaction trouvée.",
+      "loading": "Chargement..."
+    },
+    "methods": {
+      "ESPECES": "ESPÈCES",
+      "CB": "CB",
+      "VIREMENT": "VIREMENT",
+      "AUTRE": "AUTRE"
+    }
+  },
+  "StatsPage": {
+    "title": "Mon Chiffre d'Affaire",
+    "subtitle": "Analysez vos performances financières.",
+    "dates": {
+      "to": "AU"
+    },
+    "kpi": {
+      "revenue": "Chiffre d'Affaire",
+      "services": "Presta",
+      "sales": "Vente",
+      "expenses": "Dépenses / Sorties",
+      "expensesDesc": "Fournisseurs, Achats, Retraits...",
+      "net": "Bénéfice Net",
+      "netDesc": "Ce qui reste réellement en caisse"
+    },
+    "sections": {
+      "team": "Performance Équipe",
+      "topClients": "Top Clientes",
+      "paymentMethods": "Modes de Paiement",
+      "empty": "Aucune donnée sur cette période."
+    },
+    "methods": {
+      "ESPECES": "ESPÈCES",
+      "CB": "CB",
+      "VIREMENT": "VIREMENT",
+      "AUTRE": "AUTRE"
+    }
+  },
+  "ServicesPage": {
+    "title": "Catalogue des Services",
+    "subtitle": "Gérez les prestations et tarifs du salon.",
+    "newService": "Nouveau Service",
+    "table": {
+      "name": "Nom du Service",
+      "category": "Catégorie",
+      "duration": "Durée",
+      "price": "Prix",
+      "startingAt": "À partir de",
+      "actions": "Actions",
+      "empty": "Aucun service pour le moment.",
+      "min": "min",
+      "other": "Autre"
+    },
+    "modal": {
+      "titleNew": "Nouvelle Prestation",
+      "titleEdit": "Modifier la Prestation",
+      "nameLabel": "Nom du service",
+      "namePlaceholder": "Ex: Brushing, Pose Vernis...",
+      "categoryLabel": "Catégorie",
+      "selectPlaceholder": "Sélectionner...",
+      "colorLabel": "Couleur (Agenda)",
+      "priceLabel": "Prix (MAD)",
+      "isStartingPriceLabel": "Prix \"À partir de\"",
+      "isStartingPriceHint": "Le prix variera selon la longueur ou le diagnostic",
+      "durationLabel": "Durée (min)",
+      "save": "Sauvegarder",
+      "create": "Créer le Service"
+    },
+    "categories": {
+      "groupCoiffure": "Coiffure",
+      "groupEsthetique": "Esthétique / Onglerie",
+      "Coiffage": "Coiffage",
+      "Coupe": "Coupe",
+      "Coloration": "Coloration",
+      "Balayages": "Balayages & Ombré",
+      "Proteine": "Soin au Protéine",
+      "SoinCheveux": "Soin de Cheveux",
+      "MainsPieds": "Mains & Pieds",
+      "FauxCils": "Faux Cils",
+      "Epilation": "Épilation",
+      "Maquillage": "Maquillage",
+      "SoinVisage": "Soins Visage"
+    },
+    "alerts": {
+      "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce service ?",
+      "errorDelete": "Erreur lors de la suppression",
+      "errorSave": "Erreur lors de l'enregistrement"
+    }
+  },
+  "SuppliersPage": {
+    "title": "Fournisseurs",
+    "subtitle": "Gérez vos partenaires et approvisionnements.",
+    "searchPlaceholder": "Rechercher...",
+    "newSupplier": "Nouveau",
+    "empty": "Aucun fournisseur trouvé.",
+    "card": {
+      "noPhone": "Pas de numéro",
+      "lastPurchase": "Dernier Achat",
+      "lastPayment": "Dernier Paiement",
+      "never": "Jamais"
+    },
+    "modal": {
+      "titleNew": "Nouveau Fournisseur",
+      "titleEdit": "Modifier",
+      "nameLabel": "Nom",
+      "namePlaceholder": "Ex: L'Oréal Pro...",
+      "phoneLabel": "Téléphone",
+      "phonePlaceholder": "06...",
+      "descLabel": "Note / Description",
+      "descPlaceholder": "Ex: Livre le mardi...",
+      "save": "Enregistrer"
+    },
+    "history": {
+      "title": "Historique d'Achats",
+      "loading": "Chargement...",
+      "date": "Date",
+      "reason": "Motif / Description",
+      "amount": "Montant",
+      "divers": "Achat divers",
+      "empty": "Aucun achat enregistré pour ce fournisseur.",
+      "total": "Total Dépensé :"
+    },
+    "alerts": {
+      "confirmDelete": "Supprimer ce fournisseur ?",
+      "errorDelete": "Impossible de supprimer",
+      "success": "✅ Fournisseur enregistré !",
+      "error": "Erreur enregistrement."
+    }
+  },
+  "SettingsPage": {
+    "title": "Paramètres",
+    "loading": "Chargement en cours...",
+    "tabs": {
+      "planning": "Mon Planning",
+      "whatsapp": "WhatsApp",
+      "hours": "Magasin",
+      "ramadan": "Ramadan",
+      "booking": "Résa",
+      "general": "Général"
+    },
+    "planning": {
+      "title": "Mon Planning",
+      "subtitle": "Définissez vos jours de repos et horaires personnels.",
+      "save": "Enregistrer",
+      "rest": "REPOS",
+      "success": "✅ Votre planning personnel a été mis à jour !",
+      "error": "Erreur lors de la sauvegarde du planning."
+    },
+    "whatsapp": {
+      "title": "Notifications WhatsApp",
+      "subtitle": "Confirmation et rappels automatiques envoyés aux clients.",
+      "connected": "Connecté",
+      "disconnected": "Déconnecté",
+      "manage": "Gérer la connexion",
+      "scan": "Scanner le QR Code"
+    },
+    "hours": {
+      "title": "Horaires du Magasin",
+      "subtitle": "Heures d'ouverture globales pour le public.",
+      "save": "Enregistrer",
+      "success": "✅ Horaires globaux enregistrés !",
+      "error": "Échec de l'enregistrement des horaires."
+    },
+    "ramadan": {
+      "title": "Mode Ramadan",
+      "statusOn": "Le planning Ramadan est activé",
+      "statusOff": "Le planning normal est utilisé",
+      "activate": "Activer le mode",
+      "datesTitle": "Période du Ramadan",
+      "start": "Date de début",
+      "end": "Date de fin",
+      "scheduleTitle": "Horaires Spéciaux",
+      "dayShift": "Séance Jour",
+      "nightShift": "Séance Soir",
+      "save": "Enregistrer Ramadan",
+      "success": "🌙 Horaires Ramadan enregistrés avec succès !",
+      "error": "Erreur lors de la sauvegarde Ramadan."
+    },
+    "booking": {
+      "title": "Réservations en Ligne",
+      "active": "Activées",
+      "inactive": "Désactivées",
+      "activeDesc": "Le formulaire de réservation est ouvert au public.",
+      "inactiveDesc": "Le formulaire de réservation est actuellement fermé."
+    }
+  },
+  "WhatsAppPage": {
+    "title": "WhatsApp Business",
+    "subtitle": "Connectez votre téléphone pour activer les rappels automatiques (4h avant).",
+    "loading": "Chargement...",
+    "connectedTitle": "Connecté !",
+    "connectedDesc": "Le système envoie les rappels automatiquement.",
+    "disconnect": "Déconnecter",
+    "generating": "Génération du QR...",
+    "confirmDisconnect": "Voulez-vous déconnecter WhatsApp ?",
+    "steps": {
+      "1": "1. Ouvrez WhatsApp sur votre téléphone",
+      "2": "2. Allez dans Réglages > Appareils connectés",
+      "3": "3. Appuyez sur Connecter un appareil",
+      "4": "4. Scannez le code ci-dessus"
+    }
+  },
+  "TeamPage": {
+    "title": "Équipe",
+    "subtitle": "Gérez les comptes et accès de votre staff.",
+    "addMember": "Ajouter un membre",
+    "roles": {
+      "COIFFEUR": "Coiffure",
+      "ONGLERIE": "Onglerie",
+      "ESTHETICIENNE": "Esthétique",
+      "RECEPTIONIST": "Réception",
+      "SUPERADMIN": "Administrateur"
+    },
+    "modal": {
+      "title": "Nouveau Profil",
+      "titleEdit": "Modifier le Profil",
+      "rolesLabel": "Rôles / Spécialités (plusieurs choix possibles)", 
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email (Login)",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "Laisser vide pour ne pas changer",
+      "role": "Rôle / Poste",
+      "color": "Couleur Agenda",
+      "scheduleTitle": "Définir les Horaires de travail",
+      "rest": "REPOS",
+      "submit": "Créer le profil",
+      "update": "Mettre à jour"
+    },
+    "alerts": {
+      "confirmDelete": "Supprimer ce membre ? (Irréversible)",
+      "errorDelete": "Impossible de supprimer.",
+      "success": "✅ Membre ajouté !",
+      "successUpdate": "✅ Profil mis à jour !",
+      "error": "Erreur lors de l'opération"
+    }
+  },
+  "TeamPlanningPage": {
+    "title": "Gestion des Horaires Équipe",
+    "configFor": "Configurer pour :",
+    "typicalWeek": "Semaine Type",
+    "save": "Enregistrer",
+    "saving": "Sauvegarde...",
+    "rest": "Repos",
+    "success": "✅ Planning mis à jour !",
+    "error": "Erreur lors de la sauvegarde."
+  },
+  "Login": {
+    "title": "be COLOR",
+    "subtitle": "Panel d'administration",
+    "emailPlaceholder": "Email",
+    "passwordPlaceholder": "Mot de passe",
+    "submit": "Se connecter",
+    "loading": "Connexion...",
+    "errorGeneric": "Erreur de connexion"
+  }
+}

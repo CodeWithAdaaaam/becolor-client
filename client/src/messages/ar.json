@@ -1,0 +1,566 @@
+{
+  "Metadata": {
+    "title": "be COLOR | لوحة التحكم",
+    "description": "نظام إدارة متكامل لصالونات الحلاقة والتجميل."
+  },
+  "LanguageSwitcher": {
+    "changeToFrench": "الفرنسية",
+    "changeToArabic": "العربية"
+  },
+  "Days": {
+    "0": "الأحد",
+    "1": "الاثنين",
+    "2": "الثلاثاء",
+    "3": "الأربعاء",
+    "4": "الخميس",
+    "5": "الجمعة",
+    "6": "السبت"
+  },
+  "Sidebar": {
+    "title": "be COLOR",
+    "subtitle": "لوحة التحكم",
+    "dashboard": "الرئيسية",
+    "agenda": "الأجندة",
+    "appointments": "الحجوزات",
+    "clients": "الزبائن",
+    "caisse": "المالية والصندوق",
+    "stats": "الإحصائيات",
+    "services": "الخدمات",
+    "team": "الموظفين",
+    "suppliers": "الموردين",
+    "history": "سجل الصندوق",
+    "settings": "الإعدادات",
+    "logout": "تسجيل الخروج"
+  },
+  "Dashboard": {
+    "title": "لوحة القيادة",
+    "subtitle": "نظرة عامة على النشاط في الوقت الفعلي",
+    "today": "اليوم",
+    "kpi": {
+      "dailyRevenue": "إيرادات اليوم",
+      "monthlyRevenue": "إيرادات الشهر",
+      "dailyCount": "مواعيد اليوم"
+    },
+    "charts": {
+      "evolution": "التطور (آخر 7 أيام)",
+      "ca": "رقم المعاملات",
+      "topServices": "أفضل الخدمات (الشهر)",
+      "sales": "مبيعات",
+      "noData": "بيانات غير كافية."
+    },
+    "upcoming": {
+      "title": "المواعيد القادمة",
+      "viewAgenda": "عرض الأجندة",
+      "empty": "لا توجد مواعيد أخرى مقررة اليوم.",
+      "table": {
+        "time": "الوقت",
+        "client": "الزبونة",
+        "service": "الخدمة",
+        "staff": "الموظف"
+      }
+    }
+  },
+  "AgendaPage": {
+    "title": "الأجندة",
+    "filterByJob": "-- المهنة --",
+    "jobCoiffure": "تصفيف الشعر",
+    "jobOnglerie": "الأظافر",
+    "jobEsthetique": "التجميل",
+    "filterByStaff": "-- الموظف --",
+    "newAppointment": "موعد جديد",
+    "newAppointmentShort": "إضافة",
+    "calendar": {
+      "allDay": "طوال اليوم",
+      "previous": "السابق",
+      "next": "التالي",
+      "today": "اليوم",
+      "month": "شهر",
+      "week": "أسبوع",
+      "day": "يوم",
+      "agenda": "قائمة",
+      "noEventsInRange": "لا توجد مواعيد في هذه الفترة.",
+      "showMore": "أخرى"
+    }
+  },
+  "Modals": {
+    "create": {
+      "title": "موعد جديد",
+      "clientExisting": "زبونة حالية",
+      "totalDuration": "المدة الإجمالية : {time} دقيقة",
+      "totalPrice": "الثمن الإجمالي : {price} درهم",
+      "clientNew": "زبونة جديدة",
+      "clientWalkin": "عابرة",
+      "searchClient": "البحث عن زبونة",
+      "clientList": "قائمة الزبائن",
+      "firstname": "الاسم الشخصي",
+      "lastname": "الاسم العائلي",
+      "phone": "الهاتف",
+      "walkinLabel": "اسم الزبونة العابرة",
+      "walkinPlaceholder": "مثال: سيدة بملابس حمراء...",
+      "walkinNote": "لن يتم حفظ هذه الزبونة في قاعدة البيانات.",
+      "service": "الخدمة",
+      "serviceLabel": "الخدمة",
+      "selectService": "اختر خدمة",
+      "choose": "اختر",
+      "staff": "الموظف",
+      "who": "من ؟",
+      "time": "الوقت",
+      "date": "التاريخ",
+      "dateLabel": "التاريخ والوقت",
+      "whatsappNote": "إشعار واتساب تلقائي.",
+      "validate": "تأكيد الموعد",
+      "fillAllFieldsError": "يرجى ملء جميع الخانات المطلوبة.",
+      "fillClientFormError": "يرجى ملء بيانات الزبونة الجديدة.",
+      "walkinNameError": "يرجى إدخال اسم للزبونة العابرة.",
+      "walkinDefaultFirstname": "عابرة",
+      "selectClientError": "يرجى اختيار زبونة.",
+      "successMessage": "✅ تم إنشاء الموعد بنجاح!",
+      "errorMessage": "❌ خطأ أثناء إنشاء الموعد."
+    },
+    "details": {
+      "title": "تفاصيل الموعد",
+      "staffLabel": "الموظف المسؤول",
+      "changeService": "تغيير الخدمة",
+      "resendConfirmation": "إعادة إرسال التأكيد",
+      "statusConfirmed": "تأكيد الموعد",
+      "statusComplete": "استخلاص وإغلاق",
+      "statusCancel": "إلغاء الموعد",
+      "delete": "حذف",
+      "notesLabel": "ملاحظات داخلية :"
+    },
+    "complete": {
+      "title": "الإغلاق والدفع",
+      "finalAmount": "المبلغ النهائي (درهم)",
+      "cancel": "إلغاء",
+      "validate": "تأكيد الدفع",
+      "successMessage": "✅ تم إنهاء الموعد والاستخلاص!",
+      "errorMessage": "❌ خطأ أثناء تأكيد الدفع."
+    },
+    "changeService": {
+      "title": "تعديل الخدمة",
+      "client": "الزبونة",
+      "date": "التاريخ",
+      "newService": "الخدمة الجديدة",
+      "cancel": "إلغاء",
+      "save": "حفظ",
+      "saving": "جاري التحديث...",
+      "successMessage": "✅ تم تغيير الخدمة بنجاح!",
+      "errorMessage": "❌ خطأ أثناء التعديل."
+    },
+    "vipLabel": "حساب VIP / غير محدود",
+    "vipDesc": "هذا الزبون لا يدفع (مجاني بالكامل).",
+    "vipBadge": "VIP",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  },
+  "AppointmentsPage": {
+    "title": "سجل الحجوزات",
+    "subtitle": "تصفح جميع المواعيد السابقة والقادمة.",
+    "searchPlaceholder": "بحث عن زبون، هاتف...",
+    "filterStatus": {
+      "all": "جميع الحالات",
+      "CONFIRME": "مؤكد",
+      "TERMINE": "مكتمل",
+      "ANNULE": "ملغى",
+      "EN_COURS": "قيد التنفيذ"
+    },
+    "table": {
+      "date": "التاريخ والوقت",
+      "client": "الزبونة",
+      "service": "الخدمة",
+      "staff": "الموظف",
+      "price": "السعر",
+      "status": "الحالة",
+      "unassigned": "غير معين",
+      "empty": "لم يتم العثور على أي موعد."
+    },
+    "pagination": "صفحة {current} من {total}"
+  },
+  "CaisseSystem": {
+    "title": "صندوق الصالون",
+    "subtitle": "إدارة المدفوعات",
+    "balance": "في الصندوق",
+    "fund": "رأس مال الصندوق",
+    "tabs": {
+      "sale": "تحصيل",
+      "expense": "مصاريف / سحب"
+    },
+    "sale": {
+      "searchPlaceholder": "بحث عن خدمة...",
+      "emptyServices": "لم يتم العثور على أي خدمة.",
+      "ticket": "الفاتورة",
+      "client": "الزبونة",
+      "clientPlaceholder": "اختيار من القائمة",
+      "clientWalkin": "عابرة",
+      "clientNamePlaceholder": "الاسم (اختياري)",
+      "selectClient": "-- اختيار --",
+      "emptyCart": "السلة فارغة",
+      "total": "المجموع",
+      "pay": "تحصيل",
+      "methods": {
+        "ESPECES": "نقد",
+        "CB": "بطاقة بنكية",
+        "VIREMENT": "تحويل",
+        "AUTRE": "أخرى"
+      },
+      "alerts": {
+        "emptyCart": "يرجى اختيار خدمة واحدة على الأقل.",
+        "noClient": "يرجى اختيار زبونة.",
+        "success": "✅ تم التحصيل بنجاح!"
+      }
+    },
+    "expense": {
+      "title": "سحب جديد",
+      "amount": "المبلغ (درهم)",
+      "reason": "السبب",
+      "supplier": "المورد",
+      "newSupplier": "+ جديد",
+      "existingSupplier": "اختيار موجود",
+      "divers": "-- متنوع --",
+      "submit": "تأكيد السحب",
+      "alerts": {
+        "missing": "يرجى إدخال المبلغ والسبب",
+        "success": "✅ تم تسجيل السحب!"
+      }
+    },
+    "fundModal": {
+      "title": "رأس مال الصندوق",
+      "placeholder": "المبلغ (مثال: 500)",
+      "cancel": "إلغاء",
+      "validate": "تأكيد",
+      "success": "✅ تمت إضافة الإيداع!"
+    }
+  },
+  "ClientsPage": {
+    "title": "الزبائن",
+    "searchPlaceholder": "بحث (اسم، هاتف...)",
+    "newClient": "زبونة جديدة",
+    "newShort": "جديدة",
+    "empty": "لم يتم العثور على أي زبون.",
+    "table": {
+      "client": "الزبونة",
+      "contact": "معلومات الاتصال",
+      "notes": "ملاحظات تقنية",
+      "actions": "إجراءات",
+      "noNotes": "لا توجد ملاحظات"
+    },
+    "modal": {
+      "titleNew": "زبونة جديدة",
+      "titleEdit": "تعديل الملف",
+      "rolesLabel": "الأدوار / التخصصات (يمكن اختيار المتعدد)", 
+      "noRoleError": "يرجى اختيار دور واحد على الأقل.",  
+      "firstName": "الاسم الشخصي",
+      "lastName": "الاسم العائلي",
+      "phone": "الهاتف (واتساب)",
+      "email": "البريد الإلكتروني (اختياري)",
+      "techNotes": "ملاحظات تقنية / صبغة",
+      "techPlaceholder": "مثال: جذور 5.0 (20غ) + 6%...",
+      "save": "حفظ الملف",
+      "vipLabel": "حساب VIP / غير محدود",
+      "vipDesc": "هذا الزبون لا يدفع (مجاني بالكامل).",
+      "vipBadge": "VIP"
+    },
+    "alerts": {
+      "confirmDelete": "هل أنت متأكد من حذف هذه الزبونة؟",
+      "errorDelete": "لا يمكن الحذف (ربما لديها مواعيد سابقة)",
+      "errorSave": "خطأ في الحفظ."
+    }
+  },
+  "ClientDetailsPage": {
+    "backToList": "العودة للقائمة",
+    "exportPdf": "تحميل الملف الكامل (PDF)",
+    "historyTitle": "سجل الخدمات",
+    "age": "{count} سنة",
+    "ageInf": "أقل من سنة",
+    "na": "غير متوفر",
+    "cards": {
+      "formula": "التركيبة :",
+      "technique": "التقنية :",
+      "noNote": "لا توجد ملاحظات تقنية لهذا الموعد.",
+      "editNote": "تعديل الملاحظة",
+      "addNote": "إضافة ملاحظة للموعد"
+    },
+    "modal": {
+      "title": "البطاقة التقنية للموعد",
+      "formulaLabel": "التركيبة / الخليط",
+      "techniqueLabel": "التقنية المطبقة",
+      "resultLabel": "النتيجة الملاحظة",
+      "save": "حفظ",
+      "success": "تم حفظ الملاحظة بنجاح!"
+    },
+    "loading": "جاري تحميل بيانات الزبونة..."
+  },
+  "HistoryPage": {
+    "title": "السجل المالي",
+    "subtitle": "سجل مفصل للمداخيل والمصاريف.",
+    "searchPlaceholder": "بحث (زبون، سبب...)",
+    "filters": {
+      "all": "الكل",
+      "in": "مداخيل",
+      "out": "مصاريف"
+    },
+    "table": {
+      "date": "التاريخ والوقت",
+      "description": "الوصف / السبب",
+      "author": "المسؤول",
+      "method": "الطريقة",
+      "amount": "المبلغ",
+      "noDescription": "بدون وصف",
+      "clientPrefix": "الزبونة :",
+      "empty": "لم يتم العثور على أي عملية.",
+      "loading": "جاري التحميل..."
+    },
+    "methods": {
+      "ESPECES": "نقد",
+      "CB": "بطاقة بنكية",
+      "VIREMENT": "تحويل",
+      "AUTRE": "أخرى"
+    }
+  },
+  "StatsPage": {
+    "title": "رقم المعاملات",
+    "subtitle": "تحليل الأداء المالي الخاص بك.",
+    "dates": {
+      "to": "إلى"
+    },
+    "kpi": {
+      "revenue": "إجمالي المداخيل",
+      "services": "خدمات",
+      "sales": "مبيعات",
+      "expenses": "المصاريف / السحب",
+      "expensesDesc": "الموردين، المشتريات، السحوبات...",
+      "net": "الربح الصافي",
+      "netDesc": "ما تبقى فعلياً في الصندوق"
+    },
+    "sections": {
+      "team": "أداء الفريق",
+      "topClients": "أفضل الزبائن",
+      "paymentMethods": "طرق الدفع",
+      "empty": "لا توجد بيانات في هذه الفترة."
+    },
+    "methods": {
+      "ESPECES": "نقد",
+      "CB": "بطاقة بنكية",
+      "VIREMENT": "تحويل",
+      "AUTRE": "أخرى"
+    }
+  },
+  "ServicesPage": {
+    "title": "قائمة الخدمات",
+    "subtitle": "إدارة الخدمات وأسعار الصالون.",
+    "newService": "خدمة جديدة",
+    "table": {
+      "name": "اسم الخدمة",
+      "category": "الفئة",
+      "duration": "المدة",
+      "price": "السعر",
+      "startingAt": "ابتداءً من",
+      "actions": "إجراءات",
+      "empty": "لا توجد خدمات حالياً.",
+      "min": "دقيقة",
+      "other": "أخرى"
+    },
+    "modal": {
+      "titleNew": "خدمة جديدة",
+      "titleEdit": "تعديل الخدمة",
+      "nameLabel": "اسم الخدمة",
+      "namePlaceholder": "مثلاً: سشوار، صباغة...",
+      "categoryLabel": "الفئة",
+      "selectPlaceholder": "اختر...",
+      "colorLabel": "اللون (الجدول)",
+      "priceLabel": "السعر (درهم)",
+      "isStartingPriceLabel": "السعر \"ابتداءً من\"",
+      "isStartingPriceHint": "سيتغير السعر حسب طول الشعر أو التشخيص",
+      "durationLabel": "المدة (دقائق)",
+      "save": "حفظ",
+      "create": "إنشاء الخدمة"
+    },
+    "categories": {
+      "groupCoiffure": "تصفيف الشعر",
+      "groupEsthetique": "تجميل / أظافر",
+      "Coiffage": "تصفيف",
+      "Coupe": "قص",
+      "Coloration": "صباغة",
+      "Balayages": "خصل / أومبري",
+      "Proteine": "علاج بروتين",
+      "SoinCheveux": "عناية بالشعر",
+      "MainsPieds": "مانيكير وباديكير",
+      "FauxCils": "رموش اصطناعية",
+      "Epilation": "إزالة الشعر",
+      "Maquillage": "مكياج",
+      "SoinVisage": "عناية بالوجه"
+    },
+    "alerts": {
+      "confirmDelete": "هل أنت متأكد من حذف هذه الخدمة؟",
+      "errorDelete": "خطأ أثناء الحذف",
+      "errorSave": "خطأ أثناء الحفظ"
+    }
+  },
+  "SuppliersPage": {
+    "title": "الموردين",
+    "subtitle": "إدارة الشركاء والمشتريات.",
+    "searchPlaceholder": "بحث...",
+    "newSupplier": "جديد",
+    "empty": "لم يتم العثور على أي مورد.",
+    "card": {
+      "noPhone": "لا يوجد رقم",
+      "lastPurchase": "آخر شراء",
+      "lastPayment": "آخر دفع",
+      "never": "أبداً"
+    },
+    "modal": {
+      "titleNew": "مورد جديد",
+      "titleEdit": "تعديل",
+      "nameLabel": "الاسم",
+      "namePlaceholder": "مثال: لوريال...",
+      "phoneLabel": "الهاتف",
+      "phonePlaceholder": "06...",
+      "descLabel": "ملاحظة / وصف",
+      "descPlaceholder": "مثال: التوصيل يوم الثلاثاء...",
+      "save": "حفظ"
+    },
+    "history": {
+      "title": "سجل المشتريات",
+      "loading": "جاري التحميل...",
+      "date": "التاريخ",
+      "reason": "السبب / الوصف",
+      "amount": "المبلغ",
+      "divers": "مشتريات متنوعة",
+      "empty": "لا توجد مشتريات مسجلة لهذا المورد.",
+      "total": "مجموع المصاريف :"
+    },
+    "alerts": {
+      "confirmDelete": "هل تريد حذف هذا المورد؟",
+      "errorDelete": "لا يمكن الحذف",
+      "success": "✅ تم حفظ المورد بنجاح!",
+      "error": "خطأ في الحفظ."
+    }
+  },
+  "SettingsPage": {
+    "title": "الإعدادات",
+    "loading": "جاري التحميل...",
+    "tabs": {
+      "planning": "جدولي",
+      "whatsapp": "واتساب",
+      "hours": "المحل",
+      "ramadan": "رمضان",
+      "booking": "الحجز",
+      "general": "عام"
+    },
+    "planning": {
+      "title": "جدولي الشخصي",
+      "subtitle": "قم بتحديد أيام الراحة وساعات عملك الخاصة.",
+      "save": "حفظ",
+      "rest": "راحة",
+      "success": "✅ تم تحديث جدولك الشخصي بنجاح!",
+      "error": "خطأ أثناء حفظ الجدول."
+    },
+    "whatsapp": {
+      "title": "إشعارات واتساب",
+      "subtitle": "تأكيد المواعيد والتذكيرات التلقائية للزبائن.",
+      "connected": "متصل",
+      "disconnected": "غير متصل",
+      "manage": "إدارة الاتصال",
+      "scan": "مسح رمز QR"
+    },
+    "hours": {
+      "title": "توقيت المحل",
+      "subtitle": "ساعات العمل الرسمية المفتوحة للعموم.",
+      "save": "حفظ",
+      "success": "✅ تم حفظ التوقيت العام بنجاح!",
+      "error": "فشل حفظ التوقيت."
+    },
+    "ramadan": {
+      "title": "توقيت رمضان",
+      "statusOn": "نظام توقيت رمضان مفعل حالياً",
+      "statusOff": "يتم استخدام التوقيت العادي",
+      "activate": "تفعيل النظام",
+      "datesTitle": "فترة شهر رمضان",
+      "start": "تاريخ البداية",
+      "end": "تاريخ النهاية",
+      "scheduleTitle": "الأوقات الخاصة",
+      "dayShift": "الفترة النهارية",
+      "nightShift": "الفترة المسائية",
+      "save": "حفظ إعدادات رمضان",
+      "success": "🌙 تم حفظ أوقات رمضان بنجاح!",
+      "error": "خطأ أثناء حفظ إعدادات رمضان."
+    },
+    "booking": {
+      "title": "الحجز عبر الإنترنت",
+      "active": "مفعل",
+      "inactive": "معطل",
+      "activeDesc": "استمارة الحجز مفتوحة للعموم حالياً.",
+      "inactiveDesc": "استمارة الحجز مغلقة حالياً."
+    }
+  },
+  "TeamPage": {
+    "title": "فريق العمل",
+    "subtitle": "إدارة حسابات وصلاحيات الموظفين.",
+    "addMember": "إضافة عضو",
+    "roles": {
+      "COIFFEUR": "تصفيف الشعر",
+      "ONGLERIE": "الأظافر",
+      "ESTHETICIENNE": "تجميل",
+      "RECEPTIONIST": "الاستقبال",
+      "SUPERADMIN": "مدير النظام"
+    },
+    "modal": {
+      "title": "ملف جديد",
+      "titleEdit": "تعديل الملف",
+      "firstName": "الاسم الشخصي",
+      "lastName": "الاسم العائلي",
+      "email": "البريد الإلكتروني (الدخول)",
+      "password": "كلمة المرور",
+      "passwordPlaceholder": "اتركه فارغاً للاحتفاظ بكلمة المرور الحالية",
+      "role": "الدور / الوظيفة",
+      "color": "لون الأجندة",
+      "scheduleTitle": "تحديد ساعات العمل",
+      "rest": "راحة",
+      "submit": "إنشاء الملف",
+      "update": "تحديث البيانات"
+    },
+    "alerts": {
+      "confirmDelete": "هل أنت متأكد من حذف هذا العضو؟ (لا يمكن التراجع)",
+      "errorDelete": "لا يمكن الحذف.",
+      "success": "✅ تمت إضافة العضو بنجاح!",
+      "successUpdate": "✅ تم تحديث الملف بنجاح!",
+      "error": "حدث خطأ أثناء العملية"
+    }
+  },
+  "TeamPlanningPage": {
+    "title": "إدارة جداول الفريق",
+    "configFor": "إعداد لـ :",
+    "typicalWeek": "أسبوع عمل نموذجي",
+    "save": "حفظ",
+    "saving": "جاري الحفظ...",
+    "rest": "راحة",
+    "success": "✅ تم تحديث الجدول بنجاح!",
+    "error": "خطأ أثناء حفظ الجدول."
+  },
+  "Login": {
+    "title": "be COLOR",
+    "subtitle": "لوحة التحكم",
+    "emailPlaceholder": "البريد الإلكتروني",
+    "passwordPlaceholder": "كلمة المرور",
+    "submit": "تسجيل الدخول",
+    "loading": "جاري الاتصال...",
+    "errorGeneric": "خطأ في الاتصال"
+  },
+  "WhatsAppPage": {
+    "title": "واتساب للأعمال",
+    "subtitle": "قم بتوصيل هاتفك لتفعيل التذكيرات التلقائية (قبل 4 ساعات).",
+    "loading": "جاري التحميل...",
+    "connectedTitle": "متصل!",
+    "connectedDesc": "يقوم النظام بإرسال التذكيرات تلقائياً.",
+    "disconnect": "قطع الاتصال",
+    "generating": "جاري إنشاء الرمز...",
+    "confirmDisconnect": "هل أنت متأكد من قطع اتصال واتساب؟",
+    "steps": {
+      "1": "1. افتح تطبيق واتساب على هاتفك",
+      "2": "2. انتقل إلى الإعدادات > الأجهزة المرتبطة",
+      "3": "3. اضغط على ربط جهاز",
+      "4": "4. قم بمسح الرمز أعلاه"
+    }
+  }
+}
