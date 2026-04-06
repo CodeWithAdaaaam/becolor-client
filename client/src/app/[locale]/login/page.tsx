@@ -1,20 +1,32 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react'; // Ajout de useEffect
 import { useRouter, useParams } from 'next/navigation';
 import api from '@/lib/axios';
 import { Lock, Mail, Loader2 } from 'lucide-react';
-import { useTranslations } from 'next-intl'; // <--- IMPORT
+import { useTranslations } from 'next-intl';
 
 export default function LoginPage() {
   const router = useRouter();
   const params = useParams();
   const locale = params.locale as string;
-  const t = useTranslations('Login'); // <--- HOOK
+  const t = useTranslations('Login');
   
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+
+  // --- NOUVEAU : REDIRECTION AUTOMATIQUE SI DÉJÀ CONNECTÉ ---
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    const user = localStorage.getItem('user');
+    
+    // Si on a un token et un utilisateur, on saute la page de login
+    if (token && user) {
+      router.replace(`/${locale}/dashboard`);
+    }
+  }, [locale, router]);
+  // ---------------------------------------------------------
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -23,12 +35,13 @@ export default function LoginPage() {
 
     try {
       const response = await api.post('/auth/login', formData);
+      
+      // Stockage permanent (survit à la fermeture du navigateur)
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
       
       router.push(`/${locale}/dashboard`);
     } catch (err: any) {
-      // On affiche le message de l'API s'il existe, sinon le message générique traduit
       setError(err.response?.data?.message || t('errorGeneric'));
     } finally {
       setLoading(false);
@@ -51,13 +64,11 @@ export default function LoginPage() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="relative">
-            {/* start-3 permet de placer l'icône à gauche en FR et à droite en AR automatiquement */}
             <Mail className="absolute start-3 top-3 h-5 w-5 text-gray-400" />
             <input 
               type="email" 
               required 
               placeholder={t('emailPlaceholder')}
-              // ps-10 (padding-start) laisse la place à l'icône quel que soit le sens de lecture
               className="w-full ps-10 pe-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition"
               value={formData.email} 
               onChange={(e) => setFormData({...formData, email: e.target.value})}

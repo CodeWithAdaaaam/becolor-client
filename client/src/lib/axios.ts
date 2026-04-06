@@ -17,7 +17,7 @@ const api = axios.create({
 
 api.interceptors.request.use((config) => {
   if (typeof window !== 'undefined') {
-    const token = localStorage.getItem('token');
+    const token = localStorage.getItem('token'); // On récupère le token du stockage permanent
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }

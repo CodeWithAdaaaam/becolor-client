@@ -6,9 +6,7 @@ export type Role = 'SUPERADMIN' | 'RECEPTIONIST' | 'COIFFEUR' | 'ONGLERIE' | 'ES
 const STAFF_PATHS = [
   '/dashboard/agenda',
   '/dashboard/appointments',
-  '/dashboard/clients',
-  '/dashboard/caisse',
-  '/dashboard/history'
+  '/dashboard/clients'
 ];
 
 // Configuration des accès

@@ -10,7 +10,7 @@ import {
 import { clsx } from 'clsx';
 import { hasPermission, Role } from '@/config/permissions';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 // --- INTERFACES MODIFIÉES ---
 interface User { nom: string; prenom: string; roles: Role[]; } // <--- roles au pluriel (tableau)
@@ -101,6 +101,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   const [user, setUser] = useState<User | null>(null);
 
   const t = useTranslations('Sidebar');
+  const locale = useLocale();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -136,10 +137,10 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   }, [router, pathname]);
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
-    router.push('/login');
-  };
+  localStorage.removeItem('token');
+  localStorage.removeItem('user');
+  router.push(`/${locale}/login`);
+};
 
   const allNavItems: NavItem[] = [
     { name: t('dashboard'), href: '/dashboard', icon: LayoutDashboard },
